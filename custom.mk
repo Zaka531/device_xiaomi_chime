@@ -4,19 +4,18 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common DerpFest stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080
+USE_LEGACY_BOOTANIMATION := true
 
-# Live Wallpaper
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
+# Pixel customization
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
 
-# Google Assistant (New Generation)
-PRODUCT_PACKAGES += \
-    NgaResources \
-    nga
-
-# Recovery
-TARGET_USES_AOSP_RECOVERY := true
+# Screen Resolution
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 2340
