@@ -93,7 +93,7 @@ TARGET_HALS_PATH ?= hardware/qcom-caf/$(TARGET_BOARD_PLATFORM)
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/vintf/framework_compatibility_matrix.xml \
-    vendor/derp/config/device_framework_matrix.xml
+    vendor/droidx/config/device_framework_matrix.xml
 
 
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/vintf/manifest.xml

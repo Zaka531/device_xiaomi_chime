@@ -5,13 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_citrus.mk \
-    $(LOCAL_DIR)/derp_lime.mk
+    $(LOCAL_DIR)/droidx_citrus.mk \
+    $(LOCAL_DIR)/droidx_lime.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_citrus-user \
-    derp_citrus-userdebug \
-    derp_citrus-eng \
-    derp_lime-user \
-    derp_lime-userdebug \
-    derp_lime-eng
+    droidx_citrus-user \
+    droidx_citrus-userdebug \
+    droidx_citrus-eng \
+    droidx_lime-user \
+    droidx_lime-userdebug \
+    droidx_lime-eng
